@@ -99,6 +99,8 @@ body {
 
 ul, ol {
 list-style-type: none;
+margin: 0;
+padding: 0;
 
 }
 a {
@@ -109,6 +111,7 @@ h2 {
  font-family: 'Poppins', sans-serif;
  font-size: 1.875em;
  font-weight: 500;
+ margin: 0;
 }
 h3, h4 {
  font-family: 'Poppins', sans-serif;
@@ -130,14 +133,13 @@ figure {
 address {
 font-style: normal;
 }
-
-
-/*============Mobile First===========*/
-
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
 }
+
+/*============Mobile First===========*/
+
 
 /* ----------------Base Header - Footer Styles ------------- */
 
@@ -175,6 +177,7 @@ header figure {
   height:1px;
   margin: 10px 0 20px 0;
 }
+
 header nav{
   text-transform: uppercase;
   font-weight: 700;
@@ -194,20 +197,7 @@ header nav ul{
 header nav ul li {
   font-size: 1.125em;
 }
-.map figure {
-  width: 100%;
-  position: relative;
-  padding-bottom: 125%;
-  height: 0;
-  overflow: hidden;
-}
-.map iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
 
 footer {
   text-align: center;
@@ -365,6 +355,20 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+.map figure {
+  width: 100%;
+  position: relative;
+  padding-bottom: 125%;
+  height: 0;
+  overflow: hidden;
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .contact-section {
@@ -573,6 +577,10 @@ padding: 33px 0;
   .features .features-item-description {
     width: 62%;
   }
+  .features i {
+    margin-bottom: 30px;
+  }
+
   /* Reviews */
 
   .reviews article {
@@ -597,7 +605,7 @@ padding: 33px 0;
     width: 65%;
     margin: 100px 0;
   }
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -619,8 +627,6 @@ padding: 33px 0;
     justify-content: space-between;
   }
   footer .copyright {
-    display: flex;
-    justify-content: center;
     width:100%;
   }
   /* -----------About Page------------*/
@@ -635,18 +641,9 @@ padding: 33px 0;
     width: 45%;
   }
   .map figure {
-    position: relative;
-    padding-bottom: 45%;
-    height: 0;
-    overflow: hidden;
+    padding-bottom: 45.5%;
   }
-  .map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -654,6 +651,9 @@ padding: 33px 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+  .contact-content h4 {
+    font-size: 1.5em;
   }
 
   /* ------------FAQ----------------*/
@@ -677,6 +677,10 @@ padding: 33px 0;
 }
 @media screen and (min-width: 1200px) {
   /*Desktop styles here */
+
+  header {
+    padding: 15px 0;
+  }
   .content-wrapper {
     max-width: 960px;
   }
@@ -735,18 +739,9 @@ footer h4 {
   font-size: 3em;
 }
 .map figure {
-  position: relative;
-  padding-bottom: 37%;
-  height: 0;
-  overflow: hidden;
+  padding-bottom: 37.5%;
 }
-.map iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
 .contact-content h4 {
   font-size: 1.875em;
 }
